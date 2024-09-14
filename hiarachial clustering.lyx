@@ -1,0 +1,2390 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+knitr
+\end_modules
+\maintain_unincluded_children no
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008080
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\footskip 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+LINEAR REGRESSION AND CLUSTER ANALYSIS OF THE RICE PRODUCTION DATA OF MAJOR RICE PRODUCING STATE IN INDIA
+\end_layout
+
+\begin_layout Part*
+
+\size larger
+INTRODUCTION
+\size default
+:
+\end_layout
+
+\begin_layout Standard
+In Indian agriculture,
+ rice stands as a cornerstone,
+ woven into the cultural and culinary fabric of the nation.
+ Rice,
+ beyond being a mere crop,
+ holds profound significance as the staple food for millions,
+ nourishing the diverse population spread across the length and breadth of the country.
+ As we delve into the intricacies of rice production,
+ this article aims to unravel fascinating facts and insights about the leading states that play pivotal roles in shaping Indian Agricultural landscape.
+\end_layout
+
+\begin_layout Standard
+Here our study focuses mainly on the production of rice in major rice producing states through different financial years from 2016-17 to 2021-22.
+\end_layout
+
+\begin_layout Standard
+Actually the production of rice in India is saturated mostly in this 10 to 12 states.
+ Our study focuses mostly on states like 
+\series bold
+West Bengal
+\series default
+,
+ 
+\series bold
+Punjab
+\series default
+,
+ 
+\series bold
+Uttar Pradesh
+\series default
+,
+ 
+\series bold
+Andhra Pradesh
+\series default
+,
+ 
+\series bold
+Bihar
+\series default
+,
+ 
+\series bold
+Tamil Nadu
+\series default
+,
+ 
+\series bold
+Odisha
+\series default
+,
+ 
+\series bold
+Telengana
+\series default
+,
+ 
+\series bold
+Assam
+\series default
+ and 
+\series bold
+Chattisgarh
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+The R software is used to do the analysis and to prepare the graphs and charts for the interpretation of the results.
+\end_layout
+
+\begin_layout Part*
+
+\size larger
+OBJECTIVES
+\size default
+:
+\end_layout
+
+\begin_layout Enumerate
+Comparative analysis of the rice production in the major states of India through different years.
+\end_layout
+
+\begin_layout Enumerate
+Detection of major areas and identify the group of states in the country where production of rice is significantly large .
+\end_layout
+
+\begin_layout Enumerate
+Identify the states with similar production of rice.
+\end_layout
+
+\begin_layout Enumerate
+This research will helpful for the further study of the prediction aspect.
+\end_layout
+
+\begin_layout Part*
+
+\size larger
+DATA SET
+\size default
+:
+\end_layout
+
+\begin_layout Standard
+For investigating the clusters of states with similar rice production and predicting the future production ,
+ the rice production data is collected from the Agricultural Statistics Reports of the Department of Agriculture & Farmers Welfare under Ministry of Agriculture & Farmers Welfare,
+ Govt.
+ of India.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Float table
+placement document
+alignment class
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Major rice producing states with production from 2016-17 to 2021-22
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="3.8cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+States
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Production in 2016-2017
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Production in 2017-2018
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Production in 2018-2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+production in 2019-2020
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Production in 2020-2021
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Production in 2021-2022
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+West Bengal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+15.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+14.97
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+16.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+15.57
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+16.65
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+16.76
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Punjab
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+11.59
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+13.38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+12.82
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+11.78
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+12.18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+12.89
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Uttar Pradesh
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+13.75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+13.27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+13.34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+15.52
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+15.66
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+15.27
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Andhra Pradesh
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+7.45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+8.18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+8.25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+8.64
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+7.89
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+7.79
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Bihar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+8.24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+7.91
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+6.04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+6.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+6.88
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+7.06
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Tamil Nadu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+2.37
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+7.28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+6.45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+7.18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+7.28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+8.07
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Odisha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+8.33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+6.53
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+7.31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+8.04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+8.77
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+9.14
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Telengana
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+5.17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+6.25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+6.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+7.34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+7.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+12.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Assam
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+4.73
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+5.16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+5.14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+5.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+5.26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+5.27
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Chattisgarh
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+8.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+4.73
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+6.53
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+6.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+7.16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+7.9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+All entries of production of the table is in Million Tonnes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Source:
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+ https://agriwelfare.gov.in/en/Agricultural_Statistics_at_a_Glance
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the ease of calculation we standardize the data points variable - 
+\begin_inset Quotes eld
+\end_inset
+
+Production
+\begin_inset Quotes erd
+\end_inset
+
+ by changing the location.
+ So in this case starting from year 0 (taking 2016-17 as base year) we get 0,1,2,3,4,5.
+ 
+\end_layout
+
+\begin_layout Part*
+
+\size larger
+METHODOLOGY
+\size default
+:
+\end_layout
+
+\begin_layout Section
+
+\size normal
+Scatter Diagram:
+\end_layout
+
+\begin_layout Standard
+A scatterplot or Scatter diagram shows the relationship between two quantitative variables measured for the same individuals.
+ The values of one variable appear on the horizontal axis,
+ and the values of the other variable appear on the vertical axis.
+ Each individual in the data appears as a point on the graph.
+\end_layout
+
+\begin_layout Itemize
+An important component to a scatterplot is the form of the relationship between the two variables.
+ i.e.
+ whether it is linear or curvilinear or nonlinear.
+\end_layout
+
+\begin_layout Itemize
+Another important component to a scatterplot is the strength of the relationship between the two variables.
+ The slope provides information on the strength of the relationship.
+\end_layout
+
+\begin_layout Itemize
+The strongest linear relationship occurs when the slope is 1.
+ This means that when one variable increases by one,
+ the other variable also increases by the same amount.
+ This line is at a 45 degree angle.
+\end_layout
+
+\begin_layout Itemize
+The strength of the relationship between two variables is a crucial piece of information.
+ Relying on the interpretation of a scatterplot is too subjective.
+ More precise evidence is needed,
+ and this evidence is obtained by computing a coefficient that measures the strength of the relationship under investigation.
+\end_layout
+
+\begin_layout Standard
+A scatterplot displays the strength,
+ direction,
+ and form of the relationship between two quantitative variables.
+ 
+\end_layout
+
+\begin_layout Standard
+A correlation coefficient measures the strength of that relationship
+\end_layout
+
+\begin_layout Standard
+The correlation r measures the strength of the linear relationship between two quantitative variables.
+\end_layout
+
+\begin_layout Standard
+Pearson r is 
+\begin_inset Formula $r=\frac{1}{n-1}\sum\frac{(x_{i}-\bar{x})(y_{i}-\bar{y)}}{s_{x}*s_{y}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where,
+\end_layout
+
+\begin_layout Standard
+1.
+ r is always a number between -1 and 1.
+ 
+\end_layout
+
+\begin_layout Standard
+2.
+ r > 0 indicates a positive association.
+ 
+\end_layout
+
+\begin_layout Standard
+3.
+ r < 0 indicates a negative association.
+\end_layout
+
+\begin_layout Standard
+4.
+ Values of r near 0 indicate a very weak linear relationship.
+ 
+\end_layout
+
+\begin_layout Standard
+5.
+ The strength of the linear relationship increases as r moves away from 0 toward -1 or 1.
+ 
+\end_layout
+
+\begin_layout Standard
+6.
+ The extreme values r = -1 and r = 1 occur only in the case of a perfect linear relationship.
+\end_layout
+
+\begin_layout Section
+
+\size large
+Simple Linear Regression
+\size default
+:
+\end_layout
+
+\begin_layout Standard
+Linear regression analysis is used to predict the value of a variable based on the value of another variable.
+ The variable we want to predict is called the dependent variable.
+ The variable we are using to predict the other variable's value is called the independent variable.
+ We are interested here to study mainly the cause effect relationship between two variables (in this case year and production).
+\end_layout
+
+\begin_layout Standard
+When there is only one independent feature,
+ it is known as Simple Linear Regression,
+ and when there are more than one feature,
+ it is known as Multiple Linear Regression.
+\end_layout
+
+\begin_layout Standard
+Similarly,
+ when there is only one dependent variable,
+ it is considered Univariate Linear Regression,
+ while when there are more than one dependent variables,
+ it is known as Multivariate Regression.
+\end_layout
+
+\begin_layout Standard
+This is the simplest form of linear regression,
+ and it involves only one independent variable and one dependent variable.
+ The equation for simple linear regression is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y=b_{0}+b_{1}x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where:
+\end_layout
+
+\begin_layout Standard
+* y is the dependent variable
+\end_layout
+
+\begin_layout Standard
+* x is the independent variable
+\end_layout
+
+\begin_layout Standard
+* b0 is the intercept
+\end_layout
+
+\begin_layout Standard
+* b1 is the slope
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Predictive Power
+\series default
+:
+ Once a linear regression model is fitted to data,
+ it can be used to make predictions about the dependent variable based on new values of the independent variable(s).
+ For example,
+ in this case we have a model related to year and production of rice,
+ we can predict production of rice in the different years.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Forecasting:
+
+\series default
+ Linear regression is often used in time series analysis to forecast future values based on past trends.
+ For example,
+ predicting future production,
+ stock prices,
+ or economic indicators.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Problem of Inference:
+ 
+\series default
+We want to know the functional relationship between y and x,
+ that is,
+ we want an approximation of the true regression of y on x- problem of curve estimation or problem of inference
+\end_layout
+
+\begin_layout Standard
+Here our objective starts with understanding how the covariate x affects the response y.
+ We want to estimate f (the function) but not for predicting y .
+ Now fˆ cannot be treated as black-box,
+ we need to know its exact mathematical form.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+What is the best Fit Line?
+\end_layout
+
+\begin_layout Standard
+Our primary objective while using linear regression is to locate the best-fit line,
+ which implies that the error between the predicted and actual values should be kept to a minimum.
+ There will be the least error in the best-fit line.
+\end_layout
+
+\begin_layout Standard
+The best Fit Line equation provides a straight line that represents the relationship between the dependent and independent variables.
+ The slope of the line indicates how much the dependent variable changes for a unit change in the independent variable(s).
+\end_layout
+
+\begin_layout Standard
+From this we gain a estimate of 
+\begin_inset Formula $f$
+\end_inset
+
+ the regression function.
+\end_layout
+
+\begin_layout Section
+
+\size large
+Distance Matrix:
+\end_layout
+
+\begin_layout Standard
+A distance matrix is a non negative,
+ square,
+ symmetric matrix with elements corresponding to estimates of some pairwise distance between the sequences in a set.
+\end_layout
+
+\begin_layout Standard
+In our case we have the estimated or,
+ fitted regression line equations i.e.
+ 
+\begin_inset Formula $\hat{f_{i}}=\hat{b_{0}}+\hat{b_{1}*x_{i}}$
+\end_inset
+
+ where,
+ i represent the serial numbering of the 
+\begin_inset Quotes eld
+\end_inset
+
+States
+\begin_inset Quotes erd
+\end_inset
+
+ column in the data set.
+\end_layout
+
+\begin_layout Standard
+Actually we estimate the functional values and then create this Distance matrix,
+ here our distance is not in the crude sense of Euclidean distance.
+ We estimate 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\intop(f_{i}(x)-f_{j}(x))dx$
+\end_inset
+
+ over the years 0 to 6.
+\end_layout
+
+\begin_layout Section
+
+\size large
+Cluster Analysis:
+\end_layout
+
+\begin_layout Standard
+Cluster analysis is an unsupervised learning algorithm for exploratory analysis of data.
+ Cluster reffers to groups.
+\end_layout
+
+\begin_layout Standard
+It is a body of methodologies that look for natural groupings in a given data set by striving for
+\end_layout
+
+\begin_layout Standard
+* high intra-group-similarity
+\end_layout
+
+\begin_layout Standard
+* low inter-group-similarity
+\end_layout
+
+\begin_layout Standard
+The objective of cluster analysis is to find similar groups of subjects,
+ where the “similarity” between each pair of subjects represents a unique characteristic of the group vs.
+ the larger population/sample.
+ Strong differentiation between groups is indicated through separate clusters;
+ a single cluster indicates extremely homogeneous data.
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+Similarity Measures:
+\end_layout
+
+\begin_layout Standard
+The foundation of clustering methods.
+ Similarity between two points is defined in terms of the distance between them.
+\end_layout
+
+\begin_layout Standard
+The smaller the distance between them,
+ the more similar they are,
+ and vice versa.
+\end_layout
+
+\begin_layout Standard
+Most commonly used distance measure for numeric data:
+ the Euclidean distance
+\end_layout
+
+\begin_layout Standard
+Here in our report we use the distance matrix as a distance measure.
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+Clustering Methods:
+\end_layout
+
+\begin_layout Standard
+There are mainly four types of clustering methods.
+\end_layout
+
+\begin_layout Standard
+1.
+ Partitioning methods
+\end_layout
+
+\begin_layout Standard
+2.
+ Hierarchical methods
+\end_layout
+
+\begin_layout Standard
+3.
+ Model-based methods
+\end_layout
+
+\begin_layout Standard
+4.
+ Density-based methods
+\end_layout
+
+\begin_layout Standard
+We use mainly Hierarchical clustering here.
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+Hierarchical Clustering:
+\end_layout
+
+\begin_layout Standard
+Methods which partition a data set of size n into the desired number k of clusters.
+ Hierarchical clustering is another unsupervised machine learning algorithm,
+ which is used to group the unlabeled datasets into a cluster and also known as hierarchical cluster analysis or HCA.,
+ by constructing a hierarchy of clusters in one of two ways:
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+AGGLOMERATIVE approach
+\shape default
+ :
+ Starting with n clusters of size 1,
+ merge the two most similar clusters to get 
+\begin_inset Formula $n-1$
+\end_inset
+
+ clusters,
+ and repeat this process 
+\begin_inset Formula $n-k+1$
+\end_inset
+
+ times to get k clusters
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+DIVISIVE approach :
+ 
+\shape default
+Starting with a single cluster of size n,
+ split it into two optimally,
+ repeat the process a number of times,
+ splitting one of the clusters at each step
+\end_layout
+
+\begin_layout Standard
+We merged/Split the data points till desired number of clusters is obtained,
+ or the distance between the two closest clusters exceeds a certain threshold
+\end_layout
+
+\begin_layout Standard
+A convenient means of displaying the results is a dendrogram
+\end_layout
+
+\begin_layout Subsubsection
+Agglomerative Hierarchical Clustering:
+\end_layout
+
+\begin_layout Standard
+Agglomerative is a bottom-up approach,
+ in which the algorithm starts with taking all data points as single clusters and merging them until one cluster is left.
+\end_layout
+
+\begin_layout Standard
+In our study we use this approach.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Generic algorithm:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Step 0
+\series default
+.
+ Form n clusters such that 
+\begin_inset Formula $C_{i}=\{x_{i}\}$
+\end_inset
+
+ and initialize number of clusters k by n.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Step 1
+\series default
+.Find clusters 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $C_{j}$
+\end_inset
+
+ which are closest to each other.
+\end_layout
+
+\begin_layout Standard
+Step 2.Merge Ci ,
+ Cj and reduce k by 1.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Step 3
+\series default
+.If k equals the desired number of clusters or if the smallest inter-cluster distance exceeds a given threshold,
+ then stop,
+ else go to step 1.
+\end_layout
+
+\begin_layout Part*
+ANALYSIS & INTERPRETATION:
+\end_layout
+
+\begin_layout Standard
+The rice production data for major sates of India throughout the year has been analized.
+\end_layout
+
+\begin_layout Standard
+We first loading the data
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=T>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+Year<-c(2017-2017,2018-2017,2019-2017,2020-2017,2021-2017,2022-2017)
+\end_layout
+
+\begin_layout Plain Layout
+
+production_WB<-c(15.3,14.97,16.05,15.57,16.65,16.76)
+\end_layout
+
+\begin_layout Plain Layout
+
+production_Punjab<-c(11.59,13.38,12.82,11.78,12.18,12.89)
+\end_layout
+
+\begin_layout Plain Layout
+
+production_UP<-c(13.75,13.27,13.34,15.52,15.66,15.27)
+\end_layout
+
+\begin_layout Plain Layout
+
+production_AP<-c(7.45,8.18,8.25,8.64,7.89,7.79)
+\end_layout
+
+\begin_layout Plain Layout
+
+production_Bihar<-c(8.24,7.91,6.04,6.05,6.88,7.06)
+\end_layout
+
+\begin_layout Plain Layout
+
+production_TN<-c(2.37,7.28,6.45,7.18,7.28,8.07)
+\end_layout
+
+\begin_layout Plain Layout
+
+production_Odisha<-c(8.33,6.53,7.31,8.04,8.77,9.14)
+\end_layout
+
+\begin_layout Plain Layout
+
+production_Tel<-c(5.17,6.25,6.7,7.34,7.7,12.3)
+\end_layout
+
+\begin_layout Plain Layout
+
+production_as<-c(4.73,5.16,5.14,5.1,5.26,5.27)
+\end_layout
+
+\begin_layout Plain Layout
+
+production_chat<-c(8.05,4.73,6.53,6.5,7.16,7.9)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We have our data now.
+\end_layout
+
+\begin_layout Standard
+Now we want to scatter plot the data points and plot the fitted regression line over it
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=T>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(Year,production_WB,ylim = c(0,18),xlab = "Year",ylab = "Production",main = "Scatter Plot and line diagram of production of rice in different states over the years")
+\end_layout
+
+\begin_layout Plain Layout
+
+abline(lm(production_WB~Year),col='green',lwd=4)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(new=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(Year,production_Punjab,ylim=c(0,18),xlab = "",ylab = "",main = "",xaxt="n",yaxt="n")
+\end_layout
+
+\begin_layout Plain Layout
+
+abline(lm(production_Punjab~Year),col="blue",lwd=4)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(new=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(Year,production_UP,ylim = c(0,18),xlab="",ylab = "",main = "",xaxt="n",yaxt="n")
+\end_layout
+
+\begin_layout Plain Layout
+
+abline(lm(production_UP~Year),col="orange",lwd=4)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(new=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(Year,production_AP,ylim=c(0,18),xlab = "",ylab = "",main = "",xaxt="n",yaxt="n")
+\end_layout
+
+\begin_layout Plain Layout
+
+abline(lm(production_AP~Year),col="violet",lwd=4)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(new=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(Year,production_Bihar,ylim = c(0,18),xlab = "",ylab = "",main = "",xaxt="n",yaxt="n")
+\end_layout
+
+\begin_layout Plain Layout
+
+abline(lm(production_Bihar~Year),col="yellow",lwd=4)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(new=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(Year,production_TN,ylim = c(0,18),xlab = "",ylab = "",main = "",xaxt="n",yaxt="n")
+\end_layout
+
+\begin_layout Plain Layout
+
+abline(lm(production_TN~Year),col="sea green",lwd=4)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(new=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(Year,production_Odisha,ylim = c(0,18),xlab = "",ylab = "",main = "",xaxt="n",yaxt="n")
+\end_layout
+
+\begin_layout Plain Layout
+
+abline(lm(production_Odisha~Year),col="red",lwd=4)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(new=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(Year,production_Tel,ylim = c(0,18),xlab = "",ylab = "",main = "",xaxt="n",yaxt="n")
+\end_layout
+
+\begin_layout Plain Layout
+
+abline(lm(production_Tel~Year),col="skyblue",lwd=4)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(new=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(Year,production_as,ylim = c(0,18),xlab = "",ylab = "",main = "",xaxt="n",yaxt="n")
+\end_layout
+
+\begin_layout Plain Layout
+
+abline(lm(production_as~Year),col="pink",lwd=4)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(new=TRUE)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(Year,production_chat,ylim = c(0,18),xlab = "",ylab = "",xaxt="n",yaxt="n")
+\end_layout
+
+\begin_layout Plain Layout
+
+abline(lm(production_chat~Year),col="purple",lwd=4)
+\end_layout
+
+\begin_layout Plain Layout
+
+legend("bottom",c("West Bengal","Punjab","Uttar Pradesh","Andhra Pradesh","Bihar","Tamil Nadu","Odisha","Telengana","Assam","Chattisgarh"),fill=c("green","blue","orange","violet","yellow","sea green","red","skyblue","pink","purple"))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we can get scatter plot of production over years (here Year variable is scalling down to a numeric variable) for the different states.
+ we fit regression line for each state's scatter plot and got this .
+\end_layout
+
+\begin_layout Enumerate
+This shows some typical observation i.e.
+ states like West Bengal,
+ Uttar Pradesh and Punjab shows higher production and a increasing trend as the slopes of the fitted curve is slightly higher.
+\end_layout
+
+\begin_layout Enumerate
+Whereas Telengana and Tamilnadu have shown an huge increasing trend though the magnitude of production is very low as compared to West Bengal,
+ Uttar Pradesh.
+\end_layout
+
+\begin_layout Enumerate
+Odisha ,
+ Chattisgarh,
+ Assam has an increasing trend of production with low magnitude.
+\end_layout
+
+\begin_layout Enumerate
+Interestingly Bihar shows a decreasing trend in production.
+\end_layout
+
+\begin_layout Standard
+We now fit the linear regression model for each states for creating distance matrix:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=T,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+Rice_Production_Data <- data.frame(State = c("West Bengal",
+ "Punjab",
+ "Uttar Pradesh",
+ "Andhra Pradesh",
+ "Bihar",
+ "Tamil Nadu",
+ "Odisha",
+ "Telengana",
+ "Assam",
+ "Chattisgarh"),
+\end_layout
+
+\begin_layout Plain Layout
+
+  `0` = c(15.30,
+ 11.59,
+ 13.75,
+ 7.45,
+ 8.24,
+ 2.37,
+ 8.33,
+ 5.17,
+ 4.73,
+ 8.05),
+\end_layout
+
+\begin_layout Plain Layout
+
+  `1` = c(14.97,
+ 13.38,
+ 13.27,
+ 8.18,
+ 7.91,
+ 7.28,
+ 6.53,
+ 6.25,
+ 5.16,
+ 4.73),
+\end_layout
+
+\begin_layout Plain Layout
+
+  `2` = c(16.05,
+ 12.82,
+ 13.34,
+ 8.25,
+ 6.04,
+ 6.45,
+ 7.31,
+ 6.7,
+ 5.14,
+ 6.53),
+\end_layout
+
+\begin_layout Plain Layout
+
+  `3` = c(15.57,
+ 11.78,
+ 15.52,
+ 8.64,
+ 6.05,
+ 7.18,
+ 8.04,
+ 7.34,
+ 5.1,
+ 6.5),
+\end_layout
+
+\begin_layout Plain Layout
+
+  `4` = c(16.65,
+ 12.18,
+ 15.66,
+ 7.89,
+ 6.88,
+ 7.28,
+ 8.77,
+ 7.7,
+ 5.26,
+ 7.16),
+\end_layout
+
+\begin_layout Plain Layout
+
+  `5` = c(16.76,
+ 12.89,
+ 15.27,
+ 7.79,
+ 7.06,
+ 8.07,
+ 9.14,
+ 12.3,
+ 5.27,
+ 7.9))
+\end_layout
+
+\begin_layout Plain Layout
+
+Rice_Production_Data
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+range_years<-seq(min(Year),max(Year),1)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+models <- lapply(1:nrow(Rice_Production_Data),
+ function(i) {
+\end_layout
+
+\begin_layout Plain Layout
+
+  lm(as.numeric(Rice_Production_Data[i,
+ -1]) ~ Year)
+\end_layout
+
+\begin_layout Plain Layout
+
+})
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+predictions <- sapply(models,
+ function(model) {
+\end_layout
+
+\begin_layout Plain Layout
+
+  predict(model,
+ newdata = data.frame(years = range_years))
+\end_layout
+
+\begin_layout Plain Layout
+
+})
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now our desired distance matrix is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=T,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+attach(Rice_Production_Data)
+\end_layout
+
+\begin_layout Plain Layout
+
+n <- length(State)
+\end_layout
+
+\begin_layout Plain Layout
+
+distance_matrix <- matrix(0,
+ n,
+ n)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for (i in 1:(n-1)) {
+\end_layout
+
+\begin_layout Plain Layout
+
+  for (j in (i+1):n) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    distances <- (predictions[,
+ i] - predictions[,
+ j])^2
+\end_layout
+
+\begin_layout Plain Layout
+
+    sum_distance <- sum(distances)
+\end_layout
+
+\begin_layout Plain Layout
+
+    distance_matrix[i,
+ j] <- sum_distance
+\end_layout
+
+\begin_layout Plain Layout
+
+    distance_matrix[j,
+ i] <- sum_distance
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+rownames(distance_matrix) <- State
+\end_layout
+
+\begin_layout Plain Layout
+
+colnames(distance_matrix) <- State
+\end_layout
+
+\begin_layout Plain Layout
+
+distance_matrix
+\end_layout
+
+\begin_layout Plain Layout
+
+View(distance_matrix)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We clearly seen that we have a 
+\begin_inset Formula $10$
+\end_inset
+
+X
+\begin_inset Formula $10$
+\end_inset
+
+ Distance matrix.
+\end_layout
+
+\begin_layout Standard
+As we have the distance matrix now we proceed to cluster analysis of the given data frame.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=T>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+class(distance_matrix)
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(distance_matrix)
+\end_layout
+
+\begin_layout Plain Layout
+
+Hiarachial_Cluster<-hclust(as.dist(distance_matrix))
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(Hiarachial_Cluster,xlab = "states",ylab=
+\begin_inset Quotes erd
+\end_inset
+
+Production
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We clearly seen that there are roughly two groups of states regarding the production of rice.
+ In one group the high production and high trend value states like West Bengal,
+ Punjab and Uttar Pradesh and other states are in other group where,
+ Tamilnadu and telengana are in same group,
+ Andhra Pradesh and Odisha are in same group,
+ Bihar and Chattisgarh are in same group.
+\end_layout
+
+\begin_layout Standard
+for better Visualisation;
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=T,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+cutree(Hiarachial_Cluster,k=2)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\size larger
+CONCLUSION:
+\end_layout
+
+\begin_layout Standard
+After fitting and clustering the data that we have,
+ we came to an conclusion on the production value that Major rice producing states in India are mostly divide into two groups.
+ 
+\end_layout
+
+\begin_layout Enumerate
+In first group we see that states like West Bengal,
+ Uttar Pradesh and Punjab are shown mostly high production since 2016-17.
+\end_layout
+
+\begin_layout Enumerate
+In second group there are various subgroups which includes states like Bihar and Chattisgarh which shows decreasing trend in production ,
+ Tamil Nadu and Telengana which have the small magnitude of production but showing an increasing trend as compared to Assam.
+\end_layout
+
+\begin_layout Enumerate
+Roughly there are 3 subgroups one is low magnitude of production but excessively high trend,
+ second is ordinary trend with low production group and lastly is average production group showing decreasing trend.
+\end_layout
+
+\end_body
+\end_document
